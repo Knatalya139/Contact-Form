@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <style>
+        /* here you can write css */
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .first_name {
+            text-align: center;
+            height: 34px;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+            background: transparent;
+        }
+
+        .last_name {
+            text-align: center;
+            height: 34px;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+            background: transparent;
+        }
+
+        .phone_number {
+            text-align: center;
+            height: 34px;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+            background: transparent;
+        }
+
+        .email_address {
+            text-align: center;
+            height: 34px;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+            background: transparent;
+        }
+
+        .message {
+            text-align: center;
+            height: 34px;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+        }
+
+        .contact-form {
+            flex-direction: column;
+            display: flex;
+            width: 950px;
+            margin: auto;
+            background: linear-gradient(to right, aqua, purple);
+            padding: 30px;
+            border-radius: 60px;
+        }
+
+        .inner-box {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px
+        }
+
+        .first_name_box {
+            display: flex;
+            align-items: center;
+        }
+
+        .email_address_box {
+            display: flex;
+            align-items: center;
+        }
+
+        .phone_number_box {
+            display: flex;
+            align-items: center;
+        }
+
+        .text_area {
+            height: 200px;
+            border-radius: 20px;
+            padding: 10px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            font-family: "Playwrite GB S", cursive;
+        }
+
+        span {
+            color: white;
+        }
+
+        .submit_button input:hover {
+            background-color: white;
+            height: 50px;
+            width: 300px;
+            color: black;
+            font-family: cursive;
+            border-radius: 15px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+            padding: 1px 30px;
+            font-family: "Playwrite GB S", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+        }
+
+        .submit_button input {
+            background-color: transparent;
+            height: 50px;
+            width: 300px;
+            color: white;
+            font-family: cursive;
+            border-radius: 15px;
+            cursor: pointer;
+            border: 2px solid white;
+            margin-top: 20px;
+            padding: 1px 30px;
+            font-family: "Playwrite GB S", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+        }
+
+        .submit_button {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .inner-box {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0px;
+            flex-direction: column;
+            margin-top: 0px;
+        }
+        .first_name_box {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+        .first_name {
+            text-align: center;
+            height: 34px;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+            background: transparent;
+            width: 100%;
+        }
+        .last_name {
+            text-align: center;
+            height: 34px;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+            background: transparent;
+            width: 100%;
+        }
+        .email_address_box {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+        .email_address {
+            text-align: center;
+            height: 34px;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+            background: transparent;
+            width: 100%;
+        }
+        .phone_number {
+            text-align: center;
+            height: 34px;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+            background: transparent;
+            width: 100%;
+        }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- here you can write html  -->
+
+    <form class="contact-form">
+        <h1>Contact Us Form</h1>
+        <div class="inner-box">
+            <div class="first_name_box">
+                <span style="display: block;font-size: 20px;">
+                    First Name:
+                </span>
+                <input type="text" class="first_name" placeholder="Type First Name here">
+            </div>
+            <div class="last_name_box"><span style="font-size: 20px"> Last Name:</span>
+
+                <input type="text" class="last_name" placeholder="Type Last Name here">
+            </div>
+        </div>
+        <div class="inner-box">
+
+            <div class="email_address_box">
+                <span style="display: block;font-size: 20px">
+                    Email Address:
+                </span>
+                <input type="text" class="phone_number" placeholder="Type Email Address here">
+            </div>
+            <div class="">
+                <span style="font-size: 20px">
+                    Phone Number:
+                </span>
+                <input type="number" class="phone_number" placeholder="Type Phone Number here">
+            </div>
+        </div>
+        <span style="display: block;font-size: 20px">
+            Your Message:
+        </span>
+        <textarea name="" class="text_area" id="" placeholder="    Type Your Message here"></textarea>
+        <div class="submit_button">
+            <input type="Submit">
+        </div>
+
+
+    </form>
+</body>
+
+</html
